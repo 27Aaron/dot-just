@@ -19,3 +19,7 @@ gpull:
 # git push
 gp:
   @git push
+
+# git checkout main && git fetch && git rebase
+gcr:
+  @git checkout main && git fetch && git rebase
