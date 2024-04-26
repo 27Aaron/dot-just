@@ -2,3 +2,20 @@
 
 # use nushell for shell commands
 set shell := ['nu', '-m', 'light', '-c']
+
+default:
+  @just --list
+
+# ===== Git ===== #
+
+# git add .
+ga:
+  @git add .
+
+# git pull
+gpull:
+  @git pull --rebase
+
+# git push
+gp:
+  @git push
